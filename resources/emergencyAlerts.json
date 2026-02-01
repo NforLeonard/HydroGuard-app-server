@@ -1,0 +1,91 @@
+{
+  "alertLevels": {
+    "info": {
+      "level": "Information",
+      "color": "blue",
+      "sound": "gentle",
+      "priority": "low",
+      "template": "INFO: {{message}}"
+    },
+    "warning": {
+      "level": "Warning",
+      "color": "yellow",
+      "sound": "alert",
+      "priority": "medium",
+      "template": "WARNING: {{message}}"
+    },
+    "alert": {
+      "level": "Alert",
+      "color": "orange",
+      "sound": "urgent",
+      "priority": "high",
+      "template": "ALERT: {{message}}"
+    },
+    "emergency": {
+      "level": "Emergency",
+      "color": "red",
+      "sound": "siren",
+      "priority": "critical",
+      "template": "EMERGENCY: {{message}}"
+    }
+  },
+  
+  "alertTypes": {
+    "waterLevel": {
+      "thresholdExceeded": "Water level exceeded {{threshold}} cm at {{location}}",
+      "rapidRise": "Rapid water rise detected: {{riseRate}} cm/hour",
+      "peakPrediction": "Water expected to peak at {{level}} cm in {{hours}} hours",
+      "floodingConfirmed": "Flooding confirmed at {{location}}. Depth: {{depth}} cm"
+    },
+    "sensor": {
+      "failure": "Sensor {{sensorId}} failure at {{location}}",
+      "battery": "Sensor {{sensorId}} battery critical: {{battery}}%",
+      "communicationLost": "Lost communication with {{sensorId}}",
+      "calibrationNeeded": "Sensor {{sensorId}} requires calibration"
+    },
+    "weather": {
+      "heavyRain": "Heavy rainfall warning: {{intensity}} mm/hour",
+      "stormWarning": "Storm warning in effect until {{time}}",
+      "tidalSurge": "Tidal surge warning: Expected increase {{height}} meters",
+      "flashFlood": "FLASH FLOOD WARNING for {{area}}"
+    },
+    "system": {
+      "backupFailed": "System backup failed - manual intervention required",
+      "powerLoss": "Backup power engaged - mains power lost",
+      "storageFull": "Data storage approaching capacity",
+      "networkIssue": "Network connectivity issues detected"
+    }
+  },
+  
+  "responseProtocols": {
+    "level1": {
+      "name": "Routine Monitoring",
+      "actions": ["Log event", "Update dashboard", "Notify admin"],
+      "responseTime": "24 hours"
+    },
+    "level2": {
+      "name": "Enhanced Monitoring",
+      "actions": ["Increase sensor frequency", "Send email alerts", "Check backups"],
+      "responseTime": "2 hours"
+    },
+    "level3": {
+      "name": "Emergency Preparation",
+      "actions": ["Activate sirens", "Alert emergency services", "Evacuation prep"],
+      "responseTime": "30 minutes"
+    },
+    "level4": {
+      "name": "Full Emergency",
+      "actions": ["Mandatory evacuation", "Road closures", "Emergency broadcasts"],
+      "responseTime": "Immediate"
+    }
+  },
+  
+  "evacuationMessages": {
+    "prepare": "PREPARE TO EVACUATE: Flood risk increasing",
+    "recommended": "EVACUATION RECOMMENDED: Leave area if safe",
+    "mandatory": "MANDATORY EVACUATION: Leave immediately!",
+    "routes": "Evacuation routes: {{routes}}",
+    "shelters": "Emergency shelters: {{shelters}}",
+    "contacts": "Emergency contacts: {{contacts}}"
+  }
+}

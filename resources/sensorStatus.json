@@ -1,0 +1,76 @@
+{
+  "sensors": {
+    "waterLevel": {
+      "operational": "Water level sensor functioning normally",
+      "calibrationNeeded": "Water sensor requires calibration",
+      "outOfRange": "Sensor reading outside expected range",
+      "flooded": "Sensor may be submerged - verify reading",
+      "units": "centimeters"
+    },
+    "rainGauge": {
+      "operational": "Rain gauge collecting precipitation data",
+      "clogged": "Rain gauge may be clogged",
+      "tippingError": "Rain gauge tipping mechanism error",
+      "units": "millimeters per hour"
+    },
+    "temperature": {
+      "operational": "Temperature sensor active",
+      "drift": "Temperature sensor showing calibration drift",
+      "units": "degrees Celsius"
+    },
+    "humidity": {
+      "operational": "Humidity sensor functioning",
+      "saturated": "Humidity sensor at maximum reading",
+      "units": "percentage"
+    },
+    "waterFlow": {
+      "operational": "Water flow sensor monitoring",
+      "blocked": "Flow sensor potentially blocked",
+      "erratic": "Irregular flow readings detected",
+      "units": "liters per second"
+    }
+  },
+  
+  "network": {
+    "gateway": {
+      "online": "Gateway communicating with all sensors",
+      "partial": "Gateway lost connection to {{count}} sensors",
+      "offline": "Gateway offline - check network connection"
+    },
+    "battery": {
+      "optimal": "All sensors have optimal battery levels",
+      "warning": "{{count}} sensors have low battery",
+      "critical": "{{count}} sensors have critically low battery"
+    },
+    "signal": {
+      "excellent": "Signal strength: Excellent",
+      "good": "Signal strength: Good",
+      "fair": "Signal strength: Fair - occasional drops",
+      "poor": "Signal strength: Poor - frequent disconnections"
+    }
+  },
+  
+  "locations": {
+    "riverBank": {
+      "name": "River Bank Station",
+      "id": "SENSOR-RB-01",
+      "coordinates": "{{lat}}, {{long}}",
+      "elevation": "2.5 meters above sea level",
+      "floodThreshold": "3.0 meters"
+    },
+    "stormDrain": {
+      "name": "Storm Drain Monitor",
+      "id": "SENSOR-SD-02",
+      "coordinates": "{{lat}}, {{long}}",
+      "elevation": "1.8 meters above sea level",
+      "capacity": "500 liters/second"
+    },
+    "residential": {
+      "name": "Residential Area Sensor",
+      "id": "SENSOR-RA-03",
+      "coordinates": "{{lat}}, {{long}}",
+      "elevation": "5.2 meters above sea level",
+      "alertLevel": "0.5 meters"
+    }
+  }
+}

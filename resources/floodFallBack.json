@@ -1,0 +1,121 @@
+{
+  "api": {
+    "health": {
+      "system": "HydroBot - Flood Detection Assistant",
+      "status": "operational",
+      "version": "2.1.0",
+      "lastMaintenance": "2024-01-20T08:00:00Z",
+      "uptime": "{{uptime}} hours",
+      "sensorsActive": "{{activeSensors}}/{{totalSensors}}",
+      "message": "Flood detection system is monitoring your area"
+    },
+    "maintenance": {
+      "system": "HydroBot - Flood Detection Assistant",
+      "status": "maintenance",
+      "message": "System is undergoing scheduled maintenance",
+      "impact": "Real-time monitoring paused, historical data available",
+      "estimatedCompletion": "{{completionTime}}",
+      "emergencyContact": "+1-800-FLOOD-911"
+    }
+  },
+  
+  "sensor": {
+    "status": {
+      "online": "Sensor active and transmitting data",
+      "offline": "Sensor offline - check power/connection",
+      "malfunction": "Sensor reading anomalies detected",
+      "calibrating": "Sensor undergoing calibration",
+      "lowBattery": "Low battery - replace within {{days}} days"
+    },
+    "readings": {
+      "normal": "Normal water level detected",
+      "elevated": "Elevated water levels observed",
+      "warning": "Warning: Water levels approaching threshold",
+      "critical": "CRITICAL: Water levels above safe limit",
+      "flooding": "FLOODING DETECTED: Immediate action required"
+    }
+  },
+  
+  "floodRisk": {
+    "levels": {
+      "low": {
+        "level": "Low Risk",
+        "probability": "0-20%",
+        "description": "No immediate flood threat",
+        "color": "green",
+        "actions": ["Continue normal monitoring", "Check weather forecast"],
+        "icon": "✅"
+      },
+      "moderate": {
+        "level": "Moderate Risk",
+        "probability": "21-50%",
+        "description": "Potential for flooding in next 24-48 hours",
+        "color": "yellow",
+        "actions": ["Increase monitoring frequency", "Prepare emergency kit", "Review evacuation routes"],
+        "icon": "⚠️"
+      },
+      "high": {
+        "level": "High Risk",
+        "probability": "51-80%",
+        "description": "Flooding likely within 24 hours",
+        "color": "orange",
+        "actions": ["Activate flood barriers", "Alert residents", "Prepare evacuation", "Move valuables to higher ground"],
+        "icon": "🚨"
+      },
+      "severe": {
+        "level": "Severe Risk",
+        "probability": "81-100%",
+        "description": "Imminent flooding or flooding in progress",
+        "color": "red",
+        "actions": ["EVACUATE IMMEDIATELY", "Call emergency services", "Avoid flood waters", "Turn off electricity/gas"],
+        "icon": "🔥"
+      }
+    },
+    "factors": {
+      "rainfall": "Heavy rainfall increases flood probability",
+      "tide": "High tide conditions detected",
+      "snowmelt": "Rapid snowmelt contributing to water levels",
+      "drainage": "Poor drainage system capacity",
+      "soil": "Soil saturation: {{saturation}}%",
+      "river": "River level: {{riverLevel}} meters ({{status}})"
+    }
+  },
+  
+  "reports": {
+    "types": {
+      "daily": "Daily Flood Assessment Report",
+      "weekly": "Weekly Flood Risk Analysis",
+      "monthly": "Monthly Flood Prevention Summary",
+      "incident": "Flood Incident Report",
+      "custom": "Custom Date Range Report"
+    },
+    "status": {
+      "generating": "Report generation in progress...",
+      "ready": "Report is ready for download",
+      "failed": "Report generation failed",
+      "queued": "Report queued for processing"
+    },
+    "sections": {
+      "executiveSummary": "Executive Summary",
+      "riskAssessment": "Flood Risk Assessment",
+      "sensorData": "Sensor Network Status",
+      "historicalTrends": "Historical Trends",
+      "recommendations": "Prevention Recommendations",
+      "emergencyContacts": "Emergency Contacts"
+    }
+  },
+  
+  "system": {
+    "alerts": {
+      "enabled": "Alert system is active",
+      "disabled": "Alert system is disabled",
+      "test": "Test alert sent successfully",
+      "silenced": "Alerts silenced until {{time}}"
+    },
+    "backup": {
+      "active": "Data backup system operational",
+      "failed": "Backup failed - check storage",
+      "complete": "Backup completed successfully"
+    }
+  }
+}

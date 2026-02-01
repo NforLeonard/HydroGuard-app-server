@@ -1,0 +1,111 @@
+{
+  "timeBased": {
+    "morning": [
+      "Good morning! Starting flood monitoring for the day.",
+      "Morning report: All sensors active and ready.",
+      "Rise and shine! Checking overnight water levels.",
+      "Good morning! Current flood risk: {{riskLevel}}.",
+      "Morning flood check complete. System status: {{status}}."
+    ],
+    "afternoon": [
+      "Good afternoon! Continuing flood vigilance.",
+      "Afternoon update: Water levels {{trend}} since morning.",
+      "Midday monitoring active. Rainfall: {{rainfall}} mm.",
+      "Afternoon flood assessment in progress.",
+      "Good afternoon! Sensor network: {{sensorStatus}}."
+    ],
+    "evening": [
+      "Good evening! Night monitoring protocols activated.",
+      "Evening report: Flood risk remains {{riskLevel}}.",
+      "Night watch begins. All automated alerts active.",
+      "Good evening! Preparing overnight flood forecast.",
+      "Evening system check complete. Ready for night monitoring."
+    ],
+    "night": [
+      "Night monitoring active. All systems nominal.",
+      "Overnight flood watch engaged. Stay safe!",
+      "Night shift reporting: {{activeSensors}} sensors active.",
+      "Quiet night so far. Water levels stable.",
+      "Night monitoring: Emergency response team on standby."
+    ]
+  },
+  
+  "weatherBased": {
+    "sunny": [
+      "Clear skies today! Reduced flood probability.",
+      "Sunny weather - optimal conditions for water level reduction.",
+      "Good weather for drainage system maintenance.",
+      "Sunny day - evaporation helping lower water levels.",
+      "Clear conditions: Flood risk decreased by {{percentage}}%."
+    ],
+    "rainy": [
+      "Rain detected! Increased flood monitoring activated.",
+      "Rainfall ongoing. Closely watching water levels.",
+      "Wet weather alert: Enhanced monitoring engaged.",
+      "Rainfall intensity: {{intensity}}. Stay vigilant!",
+      "Rainy conditions - flood probability rising."
+    ],
+    "stormy": [
+      "STORM WARNING! Maximum flood alert level.",
+      "Severe weather detected. Emergency protocols active.",
+      "Storm conditions: All sensors at maximum frequency.",
+      "EXTREME WEATHER: Immediate flood risk assessment.",
+      "Storm alert! Prepare for potential flooding."
+    ],
+    "snow": [
+      "Snow detected. Monitoring snowmelt contribution.",
+      "Snowfall: {{depth}} cm. Flood risk depends on melt rate.",
+      "Cold weather: Reduced immediate flood risk.",
+      "Snow accumulation: {{accumulation}}. Spring flood risk: {{risk}}%.",
+      "Snow conditions: Monitoring for rapid melt scenarios."
+    ]
+  },
+  
+  "userInteraction": {
+    "login": [
+      "Welcome back, {{userName}}! Last login: {{lastLogin}}.",
+      "Good to see you, {{userName}}! Current flood status: {{status}}.",
+      "User {{userName}} authenticated. Loading flood dashboard.",
+      "Access granted. {{alertsCount}} new alerts since your last visit.",
+      "Welcome to Flood Detection System, {{userName}}!"
+    ],
+    "reportRequest": [
+      "Generating your flood report. Estimated time: {{time}}.",
+      "Report request received. Processing {{reportType}}.",
+      "Compiling data for your requested time period.",
+      "Creating comprehensive flood analysis report.",
+      "Your report is being prepared with the latest data."
+    ],
+    "alertSubscription": [
+      "You're now subscribed to flood alerts for {{location}}.",
+      "Alert preferences updated. Notification method: {{method}}.",
+      "Emergency contact registered: {{contact}}.",
+      "You will receive alerts when water exceeds {{threshold}} cm.",
+      "SMS alerts activated for {{phoneNumber}}."
+    ],
+    "systemFeedback": [
+      "Thank you for your feedback! We'll review it promptly.",
+      "Issue reported: {{issue}}. Ticket #{{ticketId}} created.",
+      "Suggestion received. Our team will evaluate it.",
+      "Bug report acknowledged. Investigation in progress.",
+      "Thank you for helping improve the flood detection system!"
+    ]
+  },
+  
+  "emergencyGreetings": {
+    "highRisk": [
+      "URGENT: Flood risk elevated to HIGH. Take precautions!",
+      "WARNING: Conditions deteriorating. Prepare now!",
+      "ATTENTION: Rising water levels detected. Stay alert!",
+      "CAUTION: Flood probability increasing rapidly.",
+      "ALERT: Monitor situation closely. Have evacuation plan ready."
+    ],
+    "allClear": [
+      "ALL CLEAR: Flood risk has returned to normal levels.",
+      "SITUATION IMPROVED: Water levels receding to safe range.",
+      "THREAT REDUCED: Immediate flood danger has passed.",
+      "SAFE CONDITIONS: Monitoring continues but risk is low.",
+      "STABLE: System returning to normal monitoring mode."
+    ]
+  }
+}
